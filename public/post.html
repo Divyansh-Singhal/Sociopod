@@ -34,18 +34,38 @@
       </div>
 
       <div class="sidebarOption">
-        <span class="material-icons"> notifications_none </span>
-        <h2>Notifications</h2>
+        <button id="profile" class="sidebarOption" type="button" data-bs-toggle="offcanvas" href="#offcanvasleft" role="button" aria-controls="offcanvasleft">
+          <span class="material-icons">
+            
+              notification_add
+              
+            </span>
+                <h2>Notifications</h2>
+        </button>
       </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasleft" aria-labelledby="offcanvasleftLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasleftLabel">Notifications (3)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="containermsg">
+            <p>Anshuman just followed you!</p>
+          </div>
+          <div class="containermsg">
+            <p>You have 7 new suggestions. Tap to see.</p>
+          </div>
+          <div class="containermsg">
+            <p>Surf through collection of latest religious books launched by pages you follow !</p>
+          </div>
 
+        </div>
+      </div>
       <div class="sidebarOption">
         <button id="profile" class="sidebarOption" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
           <span class="material-icons"> mail_outline </span>
                 <h2>Messages</h2>
         </button>
-
-
-        
       </div>
 
       
@@ -57,9 +77,6 @@
                 </span>
                 <h2>Profile</h2>
         </button>
-
-
-        
       </div>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
@@ -93,6 +110,8 @@
         </div>
         <div class="offcanvas-body">
           <div class="flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
+            <img src="https://www.kindpng.com/picc/m/497-4973038_profile-picture-circle-png-transparent-png.png" alt="Avatar" style="width:100%;">
+
             <dl class="-my-3 divide-y divide-gray-100 text-sm">
               <div
                 class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
@@ -118,8 +137,8 @@
               <div
                 class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
               >
-                <dt class="font-medium text-gray-900">Salary</dt>
-                <dd class="text-gray-700 sm:col-span-2">Not added</dd>
+                <dt class="font-medium text-gray-900">Location</dt>
+                <dd class="text-gray-700 sm:col-span-2">New Delhi , IND</dd>
               </div>
           
               <div
@@ -127,7 +146,7 @@
               >
                 <dt class="font-medium text-gray-900">Bio</dt>
                 <dd class="text-gray-700 sm:col-span-2">
-                  Not added
+                  A passionate learner and a tech enthusiast.
                 </dd>
               </div>
             </dl>
