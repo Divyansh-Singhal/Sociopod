@@ -161,7 +161,7 @@ export default function Example() {
   <select
     name="HeadlineAct"
     id="HeadlineAct"
-    className="w-15 rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" 
+    className="w-15 rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" required
   >
     <option value="">Select Theme</option>
     <option value="JM">Religious</option>
