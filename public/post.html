@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sociopod</title>
+    <link rel="stylesheet" href="post.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons">
+            group
+            </span>
+        <h2>Suggestions</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <button id="profile" class="sidebarOption" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <span class="material-icons"> mail_outline </span>
+                <h2>Messages</h2>
+        </button>
+
+
+        
+      </div>
+
+      
+
+      <div class="sidebarOption">
+        <button id="profile" class="sidebarOption" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <span class="material-icons">
+                account_circle 
+                </span>
+                <h2>Profile</h2>
+        </button>
+
+
+        
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Messages</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="containermsg">
+            <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+            <p>Hello. How are you today?</p>
+            <span class="time-right">11:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="offcanvas-body">
+          <div class="flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
+            <dl class="-my-3 divide-y divide-gray-100 text-sm">
+              <div
+                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
+              >
+                <dt class="font-medium text-gray-900">Title</dt>
+                <dd class="text-gray-700 sm:col-span-2">Mr</dd>
+              </div>
+          
+              <div
+                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
+              >
+                <dt class="font-medium text-gray-900">Name</dt>
+                <dd class="text-gray-700 sm:col-span-2">Sarthak Garg</dd>
+              </div>
+          
+              <div
+                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
+              >
+                <dt class="font-medium text-gray-900">Occuputation</dt>
+                <dd class="text-gray-700 sm:col-span-2">Chutiyapa</dd>
+              </div>
+          
+              <div
+                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
+              >
+                <dt class="font-medium text-gray-900">Salary</dt>
+                <dd class="text-gray-700 sm:col-span-2">Lawda baniya h</dd>
+              </div>
+          
+              <div
+                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
+              >
+                <dt class="font-medium text-gray-900">Bio</dt>
+                <dd class="text-gray-700 sm:col-span-2">
+                  chutiya h
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+     
+      <button class="sidebar__tweet">Tweet</button>
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <h2>Home</h2>
+      </div>
+
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+            <img
+              src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+              alt=""
+            />
+            <input type="text" placeholder="What's happening?" />
+          </div>
+          <button class="tweetBox__tweetButton">Tweet</button>
+        </form>
+      </div>
+      <!-- tweetbox ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Somanath Goudar
+                <span class="post__headerSpecial"
+                  >@somanathg</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Harshitha Gaur
+                <span class="post__headerSpecial"
+                  >@sociohsg346</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <a href="post.html"><span class="material-icons"> repeat </span></a>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Harshitha Gaur
+                <span class="post__headerSpecial"
+                  >@sociohsg346</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <a href="post.html"><span class="material-icons"> repeat </span></a>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Harshitha Gaur
+                <span class="post__headerSpecial"
+                  >@sociohsg346</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <a href="post.html"><span class="material-icons"> repeat </span></a>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Somanath Goudar
+                <span class="post__headerSpecial"
+                  >@somanathg</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+    </div>
+    <!-- feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search Sociopod" />
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>Advertisements</h2>
+       
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/ContestAlert?src=hash&amp;ref_src=twsrc%5Etfw">#ContestAlert</a><br>Guess the Myntra Revolutionary Price of this product and one lucky winner stand a chance to win a Myntra gift voucher worth Rs.10k.<br>Use <a href="https://twitter.com/hashtag/MyntraRevolutionaryPrice?src=hash&amp;ref_src=twsrc%5Etfw">#MyntraRevolutionaryPrice</a> <a href="https://twitter.com/hashtag/DiscountPeDiscountWithMyntra?src=hash&amp;ref_src=twsrc%5Etfw">#DiscountPeDiscountWithMyntra</a> along with your comments and follow <a href="https://twitter.com/myntra?ref_src=twsrc%5Etfw">@myntra</a> to qualify.<a href="https://twitter.com/hashtag/Contest?src=hash&amp;ref_src=twsrc%5Etfw">#Contest</a> <a href="https://t.co/fH7mRUu4wL">pic.twitter.com/fH7mRUu4wL</a></p>&mdash; Myntra (@myntra) <a href="https://twitter.com/myntra/status/1709584604993073540?ref_src=twsrc%5Etfw">October 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       <br/>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Are you ready to shop big this festive season? Get great deals on all the latest products at <a href="https://twitter.com/hashtag/AmazonGreatIndianFestival?src=hash&amp;ref_src=twsrc%5Etfw">#AmazonGreatIndianFestival</a> starting from 8th October 2023.​<a href="https://twitter.com/hashtag/OpenBoxesOfHappiness?src=hash&amp;ref_src=twsrc%5Etfw">#OpenBoxesOfHappiness</a> <a href="https://t.co/t5Z56mMNVX">pic.twitter.com/t5Z56mMNVX</a></p>&mdash; Amazon India (@amazonIN) <a href="https://twitter.com/amazonIN/status/1709548069686264262?ref_src=twsrc%5Etfw">October 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+   
+    <!-- widgets ends -->
+  </body>
+</html>
