@@ -1,6 +1,6 @@
 import React from "react";
 import "./register.css";
-
+import RegisterImg from "./Main image.jpg";
 /*
   This example requires some changes to your config:
   
@@ -25,7 +25,7 @@ export default function Example() {
     >
       <img
         alt="Night"
-        src="https://images.unsplash.com/photo-1617195737496-bc30194e3a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        src={RegisterImg}
         className="absolute inset-0 h-full w-full object-cover opacity-80"
       />
 
