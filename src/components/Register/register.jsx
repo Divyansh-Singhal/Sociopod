@@ -81,7 +81,7 @@ export default function Example() {
           </p>
         </div>
 
-        <form action="/home" className="mt-8 grid grid-cols-6 gap-6">
+        <form action="/post.html" className="mt-8 grid grid-cols-6 gap-6">
           <div className="col-span-6 sm:col-span-3">
            
 
@@ -193,7 +193,7 @@ export default function Example() {
 
             <p className="mt-4 text-sm text-gray-500 sm:mt-0">
               Already have an account?
-              <a href="#" className="text-gray-700 underline">Log in</a>.
+              <a href="/login" className="text-gray-700 underline">Log in</a>.
             </p>
           </div>
         </form>
